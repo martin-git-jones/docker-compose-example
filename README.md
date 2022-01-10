@@ -1,4 +1,3 @@
-# mailpony SRE Challenge
 
 **Getting Started**
 
@@ -18,7 +17,6 @@ To stop the containers, press Ctrl-C and then run:
 
 **Background**
 
-This project is provided by mailpony as an SRE Challenge.
 The Nginx container serves as a reverse proxy, forwarding requests on port 80 to the application container, which listens on port 4567.
 *First attempt*
 Networking was configured as 'host' to allow Nginx to see localhost:4567 as a port on the host and not on itself. These containers are 'sidecars' in the sense that they should be run on the same host.
